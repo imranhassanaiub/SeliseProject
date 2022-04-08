@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SeliseProject">
+              <span class="suite-name border-failed">SeliseProject</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SeliseProject">
+                    <span>D:\WorkSpace-Java\SeliseProject\src\main\java\Suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SeliseProject">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SeliseProject">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SeliseProject">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SeliseProject">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SeliseProject">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SeliseProject">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SeliseProject" class="hide-methods failed suite-SeliseProject"> (hide)</a> <!-- hide-methods failed suite-SeliseProject -->
+                      <a href="#" panel-name="suite-SeliseProject" class="show-methods failed suite-SeliseProject"> (show)</a> <!-- show-methods failed suite-SeliseProject -->
+                    </span>
+                    <div class="method-list-content failed suite-SeliseProject">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeliseProject" title="com.selise.SeliseProject.Test.AssignLeaveTest" hash-for-method="assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...)">assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SeliseProject -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SeliseProject" class="hide-methods passed suite-SeliseProject"> (hide)</a> <!-- hide-methods passed suite-SeliseProject -->
+                      <a href="#" panel-name="suite-SeliseProject" class="show-methods passed suite-SeliseProject"> (show)</a> <!-- show-methods passed suite-SeliseProject -->
+                    </span>
+                    <div class="method-list-content passed suite-SeliseProject">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeliseProject" title="com.selise.SeliseProject.Test.AssignLeaveTest" hash-for-method="AssignLeavePage">AssignLeavePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeliseProject" title="com.selise.SeliseProject.Test.LoginTest" hash-for-method="CheckLoginPageTitle">CheckLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeliseProject" title="com.selise.SeliseProject.Test.LoginTest" hash-for-method="Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])">Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SeliseProject -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SeliseProject" class="panel SeliseProject">
+          <div class="suite-SeliseProject-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selise.SeliseProject.Test.AssignLeaveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...)">
+                  </a> <!-- assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...) -->
+                  <span class="method-name">assignleavetest</span>
+                  <span class="parameters">([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=2020, fromdatedate=14, todatemonth=Dec, todateyear=2020, todatedate=19, comment=This is a test]])</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div[3]/div[1]/div[2]/form/fieldset/ol/li[1]/input[1]&quot;}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;IMRAN-PC&apos;, ip: &apos;192.168.0.131&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90a16c7a0e05a343253f2583f4843133, findElement {using=xpath, value=/html/body/div[1]/div[3]/div[1]/div[2]/form/fieldset/ol/li[1]/input[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Imran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1428}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1428/devtool..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 90a16c7a0e05a343253f2583f4843133
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at com.selise.SeliseProject.Test.AssignLeaveTest.assignleavetest(AssignLeaveTest.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeliseProject-class-failed -->
+          <div class="suite-SeliseProject-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selise.SeliseProject.Test.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckLoginPageTitle">
+                  </a> <!-- CheckLoginPageTitle -->
+                  <span class="method-name">CheckLoginPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])">
+                  </a> <!-- Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]]) -->
+                  <span class="method-name">Logintest</span>
+                  <span class="parameters">([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeliseProject-class-passed -->
+          <div class="suite-SeliseProject-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selise.SeliseProject.Test.AssignLeaveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssignLeavePage">
+                  </a> <!-- AssignLeavePage -->
+                  <span class="method-name">AssignLeavePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeliseProject-class-passed -->
+        </div> <!-- panel SeliseProject -->
+        <div panel-name="test-xml-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\WorkSpace-Java\SeliseProject\src\main\java\Suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SeliseProject&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginModuleTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selise.SeliseProject.Test.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginModuleTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AssignLeaveModuleTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selise.SeliseProject.Test.AssignLeaveTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AssignLeaveModuleTest --&gt;
+&lt;/suite&gt; &lt;!-- SeliseProject --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SeliseProject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginModuleTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AssignLeaveModuleTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SeliseProject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SeliseProject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SeliseProject');
+function tableData_SeliseProject() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CheckLoginPageTitle')
+data.setCell(0, 2, 'com.selise.SeliseProject.Test.LoginTest')
+data.setCell(0, 3, 8964);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Logintest')
+data.setCell(1, 2, 'com.selise.SeliseProject.Test.LoginTest')
+data.setCell(1, 3, 7511);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AssignLeavePage')
+data.setCell(2, 2, 'com.selise.SeliseProject.Test.AssignLeaveTest')
+data.setCell(2, 3, 719);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'assignleavetest')
+data.setCell(3, 2, 'com.selise.SeliseProject.Test.AssignLeaveTest')
+data.setCell(3, 3, 36);
+window.suiteTableData['SeliseProject']= { tableData: data, tableDiv: 'times-div-SeliseProject'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <div id="times-div-SeliseProject">
+              </div> <!-- times-div-SeliseProject -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SeliseProject</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SeliseProject" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selise.SeliseProject.Test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckLoginPageTitle</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])</span>
+                <span class="method-start">10156 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selise.SeliseProject.Test.AssignLeaveTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AssignLeavePage</span>
+                <span class="method-start">17722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...)</span>
+                <span class="method-start">18576 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

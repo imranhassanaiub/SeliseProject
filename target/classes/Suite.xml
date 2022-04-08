@@ -1,0 +1,16 @@
+<suite name="SeliseProject">
+
+	<test name="LoginModuleTest">
+		<classes>
+			<class name="com.selise.SeliseProject.Test.LoginTest" />
+		</classes>
+	</test>
+	<test name="AssignLeaveModuleTest">
+		<classes>
+			<class
+				name="com.selise.SeliseProject.Test.AssignLeaveTest" />
+		</classes>
+	</test>
+
+</suite>
+

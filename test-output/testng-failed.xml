@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SeliseProject]">
+  <test thread-count="5" name="AssignLeaveModuleTest(failed)">
+    <classes>
+      <class name="com.selise.SeliseProject.Test.AssignLeaveTest">
+        <methods>
+          <include name="assignleavetest" invocation-numbers="0"/>
+          <include name="AssignLeavePage"/>
+        </methods>
+      </class> <!-- com.selise.SeliseProject.Test.AssignLeaveTest -->
+    </classes>
+  </test> <!-- AssignLeaveModuleTest(failed) -->
+</suite> <!-- Failed suite [SeliseProject] -->
