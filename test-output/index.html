@@ -155,15 +155,15 @@
                   </a> <!-- assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...) -->
                   <span class="method-name">assignleavetest</span>
                   <span class="parameters">([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=2020, fromdatedate=14, todatemonth=Dec, todateyear=2020, todatedate=19, comment=This is a test]])</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div[3]/div[1]/div[2]/form/fieldset/ol/li[1]/input[1]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;assignleave_txtLeaveType&quot;]&quot;}
   (Session info: chrome=100.0.4896.75)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;IMRAN-PC&apos;, ip: &apos;192.168.0.131&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [90a16c7a0e05a343253f2583f4843133, findElement {using=xpath, value=/html/body/div[1]/div[3]/div[1]/div[2]/form/fieldset/ol/li[1]/input[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Imran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1428}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1428/devtool..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 90a16c7a0e05a343253f2583f4843133
+Command: [676240d32a93428d9f98eacb8ab4006c, findElement {using=xpath, value=//*[@id=&quot;assignleave_txtLeaveType&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Imran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:4388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4388/devtool..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 676240d32a93428d9f98eacb8ab4006c
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -175,7 +175,7 @@ Session ID: 90a16c7a0e05a343253f2583f4843133
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at com.selise.SeliseProject.Test.AssignLeaveTest.assignleavetest(AssignLeaveTest.java:35)
+	at com.selise.SeliseProject.Test.AssignLeaveTest.assignleavetest(AssignLeaveTest.java:37)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -183,6 +183,21 @@ Session ID: 90a16c7a0e05a343253f2583f4843133
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SeliseProject-class-failed -->
+          <div class="suite-SeliseProject-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selise.SeliseProject.Test.AssignLeaveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssignLeavePage">
+                  </a> <!-- AssignLeavePage -->
+                  <span class="method-name">AssignLeavePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeliseProject-class-passed -->
           <div class="suite-SeliseProject-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -202,21 +217,6 @@ Session ID: 90a16c7a0e05a343253f2583f4843133
                   </a> <!-- Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]]) -->
                   <span class="method-name">Logintest</span>
                   <span class="parameters">([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SeliseProject-class-passed -->
-          <div class="suite-SeliseProject-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.selise.SeliseProject.Test.AssignLeaveTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AssignLeavePage">
-                  </a> <!-- AssignLeavePage -->
-                  <span class="method-name">AssignLeavePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,24 +285,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CheckLoginPageTitle')
 data.setCell(0, 2, 'com.selise.SeliseProject.Test.LoginTest')
-data.setCell(0, 3, 8964);
+data.setCell(0, 3, 10332);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Logintest')
 data.setCell(1, 2, 'com.selise.SeliseProject.Test.LoginTest')
-data.setCell(1, 3, 7511);
+data.setCell(1, 3, 8500);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'AssignLeavePage')
 data.setCell(2, 2, 'com.selise.SeliseProject.Test.AssignLeaveTest')
-data.setCell(2, 3, 719);
+data.setCell(2, 3, 2203);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'assignleavetest')
 data.setCell(3, 2, 'com.selise.SeliseProject.Test.AssignLeaveTest')
-data.setCell(3, 3, 36);
+data.setCell(3, 3, 290);
 window.suiteTableData['SeliseProject']= { tableData: data, tableDiv: 'times-div-SeliseProject'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-SeliseProject">
               </div> <!-- times-div-SeliseProject -->
             </div> <!-- times-div -->
@@ -335,20 +335,20 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Logintest([LoginDTO [username=tutorial, password=tutorial], LoginDTO [username=Admin, password=admin123]])</span>
-                <span class="method-start">10156 ms</span>
+                <span class="method-start">11902 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selise.SeliseProject.Test.AssignLeaveTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AssignLeavePage</span>
-                <span class="method-start">17722 ms</span>
+                <span class="method-start">20457 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">assignleavetest([AssignLeaveDTO [employeename=Cassidy Hope, leavetype=US - FMLA, fromdatemonth=Dec, fromdateyear=202...)</span>
-                <span class="method-start">18576 ms</span>
+                <span class="method-start">22780 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

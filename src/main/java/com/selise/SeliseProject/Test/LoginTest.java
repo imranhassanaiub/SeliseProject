@@ -2,6 +2,8 @@ package com.selise.SeliseProject.Test;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -18,6 +20,7 @@ import com.selise.SeliseProject.Utilities.XpathUtils;
 @Listeners(TestNGReporting.class)
 public class LoginTest {
 
+	Logger log = LogManager.getLogger(LoginTest.class.getName());
 	private WebDriver driver = null;
 
 	@Test
@@ -32,10 +35,11 @@ public class LoginTest {
 	@Test(dependsOnMethods = "CheckLoginPageTitle", dataProvider = "loginData", dataProviderClass = LoginDataProvider.class)
 	public void Logintest(List<LoginDTO> logdata) {
 		for (LoginDTO login : logdata) {
+
 			driver.findElement(By.xpath(XpathUtils.LoginModule.Username)).sendKeys(login.getUsername());
 			driver.findElement(By.xpath(XpathUtils.LoginModule.Password)).sendKeys(login.getPassword());
 			driver.findElement(By.xpath(XpathUtils.LoginModule.LoginBTN)).click();
-
+            log.debug("Invalid credentials");
 		}
 
 	}

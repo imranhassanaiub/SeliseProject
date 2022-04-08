@@ -5,7 +5,7 @@ public class UrlTextUtils {
 	public static class URL {
 
 		public static final String Base_URL = "https://opensource-demo.orangehrmlive.com/";
-		public static final String AssignLeavePageURL = "https://opensource-demo.orangehrmlive.com/index.php/leave//";
+		public static final String AssignLeavePageURL = "https://opensource-demo.orangehrmlive.com/index.php/leave/viewLeaveList";
 	}
 
 	public static class TEXT {
